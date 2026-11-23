@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lora:ital,wght@0,400;0,500;1,400&family=Mali:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Default font */
+}
+
+:root {
+    --bg-color: #e0f7fa; 
+    --primary-dark: #006064; 
+    --card-bg: #b2dfdb; 
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* ================= NAVBAR (Iosevka Charon) ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--bg-color);
+}
+
+.logo {
+    font-family: 'Iosevka Charon', monospace; /* FONT NAVBAR */
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-dark);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-menu a {
+    font-family: 'Iosevka Charon', monospace; /* FONT NAVBAR */
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-dark);
+    padding-bottom: 2px;
+}
+
+.btn-login {
+    font-family: 'Iosevka Charon', monospace; /* FONT NAVBAR */
+    background-color: var(--primary-dark);
+    color: white !important;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* ================= HALAMAN BERANDA ================= */
+.hero-beranda {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0, 96, 100, 0.6)), url('beranda.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 0 50px;
+    text-align: right;
+    color: white;
+}
+
+/* FONT CAVEAT (Jelajahi) */
+.hero-text h1 .latin {
+    font-family: 'Caveat', cursive; 
+    font-size: 4rem;
+    font-weight: normal;
+    display: block;
+    margin-bottom: -15px;
+}
+
+.hero-text h1 .tegas {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-text p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    max-width: 450px;
+    margin-left: auto;
+    line-height: 1.5;
+}
+
+.destinasi-populer {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* FONT MALI (Destinasi Populer) */
+.destinasi-populer h2 {
+    font-family: 'Mali', cursive;
+    color: var(--primary-dark);
+    font-size: 2rem;
+}
+
+/* FONT LORA (Pantai-pantai indah...) */
+.destinasi-populer > p {
+    font-family: 'Lora', serif;
+    font-style: italic; /* Saya buat italic agar estetikanya mirip sub-judul Lora */
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: var(--primary-dark);
+    margin: 15px 0 5px 0;
+}
+
+.card .lokasi {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card .htm {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* ================= HALAMAN DESTINASI ================= */
+.hero-destinasi {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0, 96, 100, 0.6)), url('destinasi.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 50px;
+    text-align: right;
+    color: white;
+}
+
+/* FONT MALI (Destinasi Hero Title) */
+.hero-destinasi h1 {
+    font-family: 'Mali', cursive;
+    font-size: 2.8rem;
+}
+
+.hero-destinasi p {
+    font-size: 1rem;
+}
+
+.list-destinasi {
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list-item {
+    display: flex;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.list-item img {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.list-content {
+    padding: 25px;
+    flex: 1; 
+}
+
+.list-content h3 {
+    color: var(--primary-dark);
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.list-content .lokasi {
+    font-size: 0.85rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.list-content p {
+    font-size: 0.9rem;
+    color: #222;
+    line-height: 1.6;
+}
+
+.list-action {
+    padding: 0 30px;
+}
+
+.list-action a {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-bar {
+    background-color: var(--primary-dark);
+    height: 40px;
+    width: 100%;
+}
