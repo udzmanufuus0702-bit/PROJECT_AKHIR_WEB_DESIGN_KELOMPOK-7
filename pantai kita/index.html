@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pantai Kita - Beranda</title>
+
+  <!-- Font: Caveat, Poppins, Mali, Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Lora:wght@500;600&family=Mali:wght@500;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <!-- Font navbar: Iosevka Charon (dipisah supaya font lain tetap tampil kalau yang ini gagal dimuat) -->
+  <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo" aria-label="Pantai Kita - Beranda">
+      <img src="image/logo.png" alt="Pantai Kita">
+    </a>
+
+    <nav class="nav-right" aria-label="Menu utama">
+      <button class="search-btn" type="button" aria-label="Cari">
+        <img src="image/searchicon.png" alt="">
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">Beranda</a></li>
+        <li><a href="panduan.html">Panduan</a></li>
+        <li><a href="destinasi.html">Destinasi</a></li>
+        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+      </ul>
+      <a href="login.html" class="btn-login">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="line-first">
+            <img class="kelapa" src="image/kelapa.png" alt="">
+            <span>Jelajahi</span>
+          </span>
+          <span>Keindahan</span><br>
+          <span>Pantai Gunungkidul</span>
+        </h1>
+        <p class="hero-desc">
+          Biarkan debur ombak, pasir putih, dan cakrawala biru membawamu menemukan ketenangan yang baru.
+          Dari tebing yang menawan hingga hamparan pasir yang memukau, temukan keindahan tersembunyi
+          di pesisir Gunungkidul, Yogyakarta.
+        </p>
+      </div>
+    </section>
+
+    <!-- DESTINASI POPULER -->
+    <section class="destinasi">
+      <!-- hiasan ellipse -->
+      <span class="ellipse e1"></span>
+      <span class="ellipse e2"></span>
+      <span class="ellipse e3"></span>
+      <span class="ellipse e4"></span>
+
+      <div class="section-head">
+        <img class="deco deco-shell" src="image/shell.png" alt="">
+        <img class="deco deco-seawaves" src="image/seawaves.png" alt="">
+        <img class="deco deco-turtle" src="image/turtle.png" alt="">
+        <h2>Destinasi Populer</h2>
+        <p>Pantai - pantai indah dengan pesonanya masing-masing</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <img class="photo" src="image/pantai-drini.jpg" alt="Pantai Drini">
+          <h3>Pantai Drini</h3>
+          <p class="lokasi">
+            <svg viewBox="0 0 24 24" fill="#245B60" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Tepus, Gunungkidul
+          </p>
+          <p class="htm">HTM RP10.000,00</p>
+        </article>
+
+        <article class="card">
+          <img class="photo" src="image/pantai-indrayanti.jpg" alt="Pantai Indrayanti">
+          <h3>Pantai Indrayanti</h3>
+          <p class="lokasi">
+            <svg viewBox="0 0 24 24" fill="#245B60" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Tanjungsari, Gunungkidul
+          </p>
+          <p class="htm">HTM RP10.000,00</p>
+        </article>
+
+        <article class="card">
+          <img class="photo" src="image/pantai-baron.jpg" alt="Pantai Baron">
+          <h3>Pantai Baron</h3>
+          <p class="lokasi">
+            <svg viewBox="0 0 24 24" fill="#245B60" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Tanjungsari, Gunungkidul
+          </p>
+          <p class="htm">HTM RP10.000,00</p>
+        </article>
+      </div>
+
+      <div class="more">
+        <img src="image/snail.png" alt="">
+        <a href="destinasi.html">Selengkapnya di menu destinasi</a>
+        <img src="image/whale.png" alt="">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+
+</body>
+</html>
